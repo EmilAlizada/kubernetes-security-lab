@@ -19,7 +19,7 @@ spec:
       type: RuntimeDefault
   containers:
     - name: client
-      image: curlimages/curl:8.16.0
+      image: curlimages/curl:8.22.0
       imagePullPolicy: IfNotPresent
       command: ["sh", "-c", "sleep 3600"]
       securityContext:
