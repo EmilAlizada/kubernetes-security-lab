@@ -1,0 +1,44 @@
+name: Kubernetes Security Checks
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+concurrency:
+  group: kubernetes-security-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  validate:
+    name: Manifest security policy
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: requirements-dev.txt
+
+      - name: Install validation tools
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements-dev.txt
+
+      - name: YAML lint
+        run: python -m yamllint k8s
+
+      - name: Security policy tests
+        run: pytest -q
