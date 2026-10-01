@@ -1,5 +1,7 @@
 # Kubernetes Security Lab
 
+[![Kubernetes Security Checks](https://github.com/EmilAlizada/kubernetes-security-lab/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/EmilAlizada/kubernetes-security-lab/actions/workflows/ci.yml)
+
 A hands-on Kubernetes hardening lab that demonstrates how I design workloads around **least privilege, workload isolation, deny-by-default networking, resource governance, and security regression testing**.
 
 > Portfolio / learning project. The manifests are intentionally small enough to audit line by line, while still modeling controls that matter in real Kubernetes environments.
