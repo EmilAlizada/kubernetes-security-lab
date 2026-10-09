@@ -210,6 +210,14 @@ The workload root filesystem is read-only. A small memory-backed `emptyDir` is m
 - [ ] Add runtime detection examples
 - [ ] Add a disposable Kind-based integration test
 
+## Explore the portfolio
+
+- [DevSecOps Pipeline](https://github.com/EmilAlizada/devsecops-pipeline)
+- [Secure Django API](https://github.com/EmilAlizada/secure-django-api)
+- [Python Security Toolkit](https://github.com/EmilAlizada/python-security-toolkit)
+
+[GitHub profile](https://github.com/EmilAlizada)
+
 ## Author
 
 **Emil Alizada**  
