@@ -216,7 +216,7 @@ The workload root filesystem is read-only. A small memory-backed `emptyDir` is m
 - [Secure Django API](https://github.com/EmilAlizada/secure-django-api)
 - [Python Security Toolkit](https://github.com/EmilAlizada/python-security-toolkit)
 
-[GitHub profile](https://github.com/EmilAlizada)
+[Portfolio website](https://emilalizada.github.io/) · [GitHub profile](https://github.com/EmilAlizada)
 
 ## Author
 
